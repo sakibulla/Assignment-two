@@ -129,6 +129,52 @@
     padding: 20px;
     border: none;
 }
+.Flower-section{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 210px auto;
+    justify-content: center;
+}
+
+.flower-text{
+    margin: 0 60px;
+    max-width: 540px;
+    padding: 20px;
+}
+
+.Flower-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.flower-list{
+    padding: 20px;
+}
+
+.Flower-text{
+    color: rgba(0, 0, 0, 0.5);
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.img{
+   position: relative;
+   display: inline-block;
+}
+
+.Flower-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Badge{
+    position: absolute;
+    left: 350px;
+    top: -120px;
+    width: 300px;
+}
+
 
 @media screen and (max-width: 768px) {
     .nav-bar{
