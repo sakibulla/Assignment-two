@@ -319,7 +319,7 @@ body {
 
 /* Subscribe Section */
 .subscribe-section {
-  background: url("/assets/news-letter-bg.png") no-repeat center center/cover;
+  background: url("assets/news-letter-bg.png") no-repeat center center/cover;
   padding: 60px 20px;
   text-align: center;
   color: white;
