@@ -27,6 +27,14 @@
 .logo{
 
 }
+.banner-text{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+.banner-image{
+
+}
 
 .icon-container{
     display: flex;
@@ -72,6 +80,55 @@
     margin-top: 0%;
 
 }
+.main{
+    margin-top: 120px;
+}
+
+.market-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.card-container{
+    max-width: 1140px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    gap: 30px;
+
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-name{
+    margin-top: 20px;
+}
+
+.price{
+    margin-top: 0px;
+    font-size: 1.5rem;
+}
+
+.sale-button{
+    display: flex;
+    margin-top: 0px;
+    background-color:rgba(233, 90, 8, 1);
+    color: white;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    border: none;
+}
 
 @media screen and (max-width: 768px) {
     .nav-bar{
@@ -93,4 +150,92 @@
         margin-top: 50px;
     }
 
+    .Title, .Orange{
+        font-size: 2.5rem;
+    }
+
+    .Banner-inside{
+        margin: 0 10px;
+        padding: 0%;
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        padding: 0%;
+        margin-bottom: 0px;
+    }
+
+    .banner-image{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main{
+        max-width: 393px;
+        margin: 65px auto;
+    }
+   
+    .Title, .Orange{
+        margin-top: 0px;
+    }
+
+    .market-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 363px;
+
+        text-align: center;
+    }
+    
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 363px;
+    }
+
+    .item-pic{
+        width: 100%;
+    }
+    
+    .Flower-section{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 20px;
+    }    
+    
+    .Badge{
+        display: none;
+    }
+
+    .flower-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        text-align: left;
+        margin: 20px;
+
+    }
+
+    .Flower-title{
+      font-size: 2rem;
+      white-space: nowrap;
+
+      margin: 0%;
+      
+    }
+    
+    .Flower-list{
+      padding: 0px;
+      margin: 10px 0px;
+      width: 300px;
+    }
+
+    .Flower-text{
+        font-size: 1rem;
+    }
 }
