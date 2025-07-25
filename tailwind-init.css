@@ -174,7 +174,285 @@
     top: -120px;
     width: 300px;
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f8fbff;
+  color: #333;
+}
 
+.latest-deals {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.latest-deals h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.latest-deals .highlight {
+  color: orange;
+}
+
+.latest-deals .subtitle {
+  font-size: 14px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.deals-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.deal-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 240px;
+  max-width: 300px;
+}
+
+.deal-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.deal-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.deal-card.large img {
+  height: 100%;
+  max-height: 360px;
+}
+
+.deal-card.large {
+  flex: 2;
+  min-width: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.overlay.center {
+  align-items: center;
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.overlay button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .deals-grid {
+    flex-direction: column;
+  }
+
+  .deal-left {
+    width: 100%;
+  }
+
+  .deal-card.large {
+    width: 100%;
+  }
+
+  .deal-card img,
+  .deal-card.large img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: cover;
+  }
+
+  .overlay {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+}
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background-color: #f8fbff;
+  color: #333;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  background: url("/assets/news-letter-bg.png") no-repeat center center/cover;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.subscribe-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.subscribe-form button {
+  background-color: #f15a24;
+  color: white;
+  padding: 0 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: white;
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  flex: 2;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
 
 @media screen and (max-width: 768px) {
     .nav-bar{
