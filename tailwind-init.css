@@ -23,7 +23,7 @@
   height: 20px;
  
 }
-.noto-serif {
+.font-noto-serif {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -43,14 +43,14 @@
 
 }
 
-.icon-container{
+.nav-menu{
     display: flex;
     gap: 50px;
     list-style: none;
     align-items: center;
 }
 
-.icon{
+.nav-link{
     text-decoration: none;
     color: gray;
 }
@@ -87,11 +87,11 @@
     margin-top: 0%;
 
 }
-.main{
+.page-content{
     margin-top: 120px;
 }
 
-.market-section{
+.product-showcase{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,29 +136,29 @@
     padding: 20px;
     border: none;
 }
-.Flower-section{
+.about-flower{
     display: flex;
     flex-direction: row-reverse;
     margin: 210px auto;
     justify-content: center;
 }
 
-.flower-text{
+.about-text{
     margin: 0 60px;
     max-width: 540px;
     padding: 20px;
 }
 
-.Flower-title{
+.about-title{
     font-size: 4rem;
     font-weight: 700;
 }
 
-.flower-list{
+.feature-list{
     padding: 20px;
 }
 
-.Flower-text{
+.about-text{
     color: rgba(0, 0, 0, 0.5);
     margin: 20px 0px;
     font-size: 20px;
@@ -363,14 +363,14 @@ body{
 
 }
 
-.icon-container{
+.nav-menu{
     display: flex;
     gap: 50px;
     list-style: none;
     align-items: center;
 }
 
-.icon{
+.nav-link{
     text-decoration: none;
     color: gray;
 }
@@ -423,7 +423,7 @@ body{
     margin-top: 120px;
 }
 
-.market-section{
+.product-showcase{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -475,29 +475,29 @@ body{
     cursor: pointer;
 }
 
-.Flower-section{
+.about-flower{
     display: flex;
     flex-direction: row-reverse;
     margin: 210px auto;
     justify-content: center;
 }
 
-.flower-text{
+.about-text{
     margin: 0 60px;
     max-width: 540px;
     padding: 20px;
 }
 
-.Flower-title{
+.about-title{
     font-size: 4rem;
     font-weight: 700;
 }
 
-.flower-list{
+.feature-list{
     padding: 20px;
 }
 
-.Flower-text{
+.about-text{
     color: rgba(0, 0, 0, 0.5);
     margin: 20px 0px;
     font-size: 20px;
@@ -710,7 +710,7 @@ body{
         margin-left: 10px;
     }
 
-    .icon, .home{
+    .nav-link, .home{
         display: none;
     
     }
@@ -753,7 +753,7 @@ body{
 
     }
 
-    .main{
+    .page-content{
         max-width: 393px;
         margin: 65px auto;
     }
@@ -762,7 +762,7 @@ body{
         margin-top: 0px;
     }
 
-    .market-section{
+    .product-showcase{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -785,7 +785,7 @@ body{
         display: none;
     }
 
-    .Flower-section{
+    .about-flower{
         display: flex;
         flex-direction: column-reverse;
         margin: 20px;
@@ -794,7 +794,7 @@ body{
         margin-top: 50px;
     }    
     
-    .flower-text{
+    .about-text{
         text-align: left;
         width: 100%;
         margin: 0%;
@@ -802,20 +802,20 @@ body{
         padding-right: 0%;
     }
 
-    .Flower-title{
+    .about-title{
       font-size: 1.5rem;
       white-space: nowrap;
       margin: 0%;
       text-align: left;
     }
     
-    .Flower-list{
+    .feature-list{
       padding: 0px;
       margin: 10px 0px;
       width: 100%;
     }
 
-    .Flower-text{
+    .about-text{
         font-size: 1rem;
     }
 
@@ -963,7 +963,7 @@ body{
   line-height: 1.6;
 }
 
-.footer-links {
+.footer-navigation{
   display: flex;
   gap: 40px;
   flex: 2;
@@ -971,11 +971,11 @@ body{
   justify-content: space-around;
 }
 
-.footer-links ul {
+.footer-navigation ul {
   list-style: none;
 }
 
-.footer-links li {
+.footer-navigation li {
   font-size: 14px;
   margin-bottom: 10px;
   color: #333;
@@ -1016,7 +1016,7 @@ body{
     text-align: center;
   }
 
-  .footer-links {
+  .footer-navigation {
     flex-direction: column;
     gap: 20px;
   }
@@ -1038,7 +1038,7 @@ body{
         margin-left: 10px;
     }
 
-    .icon, .home{
+    .nav-link, .home{
         display: none;
     }
 
@@ -1069,7 +1069,7 @@ body{
         margin-bottom: 20px;
     }
 
-    .main{
+    .page-content{
         max-width: 393px;
         margin: 65px auto;
     }
@@ -1097,7 +1097,7 @@ body{
         width: 100%;
     }
     
-    .Flower-section{
+    .about-flower{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -1108,7 +1108,7 @@ body{
         display: none;
     }
 
-    .flower-text{
+    .about-text{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1118,7 +1118,7 @@ body{
 
     }
 
-    .Flower-title{
+    .about-title{
       font-size: 2rem;
       white-space: nowrap;
 
@@ -1126,13 +1126,13 @@ body{
       
     }
     
-    .Flower-list{
+    .feature-list{
       padding: 0px;
       margin: 10px 0px;
       width: 300px;
     }
 
-    .Flower-text{
+    .about-text{
         font-size: 1rem;
     }
 }
